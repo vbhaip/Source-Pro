@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        {{word}}
+
+        {% if word|length == 4 %}
+            <p>your word has 4 letters nice!</p>
+        {%endif%}
+        {% for letter in word %}
+            <p>{{letter}}!</p>
+        {% endfor %}
+    </body>
+</html>
